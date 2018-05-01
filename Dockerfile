@@ -1,4 +1,4 @@
-FROM hyperledger/fabric-peer 
+FROM fgodinho/hlf-peer 
 # use locally compiled peer by jcs47
 # install java and ant
 RUN apt-get update
