@@ -17,4 +17,5 @@ RUN cd juds && ./autoconf.sh && ./configure && make && make install
 RUN rm -rf juds
 # deploy acp java module
 COPY hlf-acp-jprov.jar /
-COPY start.sh /
+COPY runACP.sh /
+COPY startPeer.sh /
