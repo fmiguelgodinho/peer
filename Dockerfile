@@ -1,5 +1,5 @@
 FROM fgodinho/hlf-peer 
-# use locally compiled peer by jcs47
+# use locally compiled peer
 # install java and ant
 RUN apt-get update
 RUN apt-get install -y software-properties-common
@@ -15,7 +15,7 @@ RUN tar -xzvf juds.tar.gz
 RUN apt-get install --reinstall make
 RUN cd juds && ./autoconf.sh && ./configure && make && make install
 RUN rm -rf juds
-# deploy acp java module
-COPY hlf-acp-jprov.jar /
-COPY runACP.sh /
+# deploy xsp java module
+COPY hlf-xsp.jar /
+COPY runXSP.sh /
 COPY startPeer.sh /

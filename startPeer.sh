@@ -2,7 +2,7 @@
 
 # run java component: ACP
 cd /
-./runACP.sh & disown
+./runXSP.sh & disown
 
 # wait a few seconds to allow java component to boot up
 sleep 10
