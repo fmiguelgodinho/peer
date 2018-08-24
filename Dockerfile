@@ -1,4 +1,4 @@
-FROM fgodinho/hlf-peer 
+FROM fgodinho/hlf-byz-peer 
 # use locally compiled peer
 # install java and ant
 RUN apt-get update
